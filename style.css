@@ -1,0 +1,258 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+
+  text-transform: uppercase;
+  color: white;
+}
+body {
+  background-color: black;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.side {
+  background-color: rgb(0, 0, 0);
+  height: 570px;
+  width: 100%;
+}
+.pole {
+  position: relative;
+  min-width: 800px;
+  height: 570px;
+  background-color: rgb(7, 8, 41);
+  /* display: grid;
+  grid-template-columns: repeat(80, 20px);
+  grid-auto-rows: 20px; */
+}
+
+.border {
+  position: absolute;
+  background-color: red;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(238, 30, 30);
+  border: 1px solid rgb(255, 111, 111);
+  border-radius: 50%;
+
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+
+.platform {
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(43, 253, 43);
+}
+
+.cube {
+  position: absolute;
+  z-index: 100;
+}
+
+.cube-stop {
+  position: absolute;
+}
+.network-cube {
+  border: 1px solid gray;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+}
+.type-cube-wrapper {
+  display: flex;
+}
+.top-cube {
+  width: 50px;
+  height: 50px;
+}
+
+.type1 {
+  background-color: #ffc600;
+}
+.type2 {
+  background-color: #5800ff;
+}
+.type3 {
+  background-color: #000000;
+}
+.type4 {
+  background-color: #cd0404;
+}
+.type5 {
+  background-color: #ffe15d;
+}
+.type6 {
+  background-color: #f49d1a;
+}
+.type7 {
+  background-color: #dc3535;
+}
+.type8 {
+  background-color: #b01e68;
+}
+.type9 {
+  background-color: #898121;
+}
+.type10 {
+  background-color: #4c4b16;
+}
+.type11 {
+  background-color: #ffacac;
+}
+.type12 {
+  background-color: #fbffb1;
+}
+.type13 {
+  background-color: #183a1d;
+}
+.type14 {
+  background-color: #1f8a70;
+}
+.type15 {
+  background-color: #cf4dce;
+}
+.type16 {
+  background-color: #b08bbb;
+}
+
+.save {
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: rgb(199, 0, 33);
+  display: inline-block;
+  margin: 0 400px;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////// */
+
+.level-wrapper {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.level-text {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.level-number {
+  font-size: 2rem;
+}
+.score-wrapper {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.score-text {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.score-number {
+  font-size: 2rem;
+}
+.life-wrapper {
+  padding: 20px 20px 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.life {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-right: 10px;
+  opacity: 0.3;
+}
+.life.active {
+  opacity: 1;
+}
+.img-max {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ///////////////////////////////////////////////////// */
+.modal-background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #0000007a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  width: 280px;
+  height: 300px;
+  background-color: rgb(76, 49, 140);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-top-img {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.img-max {
+}
+.modal-score-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.modal-score-text {
+  margin-right: 10px;
+}
+.modal-score-number {
+}
+.modal-circle-img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+}
+.modal-circle-img:hover {
+  opacity: 0.8;
+}
+
+.restart-modal {
+  display: none;
+}
+.next-modal {
+  display: none;
+}
+.victory-modal {
+  display: none;
+}

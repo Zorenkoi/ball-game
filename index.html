@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="type-cube-wrapper">
+      <div data-typecube="type1" class="top-cube type1"></div>
+      <div data-typecube="type2" class="top-cube type2"></div>
+      <div data-typecube="type3" class="top-cube type3"></div>
+      <div data-typecube="type4" class="top-cube type4"></div>
+      <div data-typecube="type5" class="top-cube type5"></div>
+      <div data-typecube="type6" class="top-cube type6"></div>
+      <div data-typecube="type7" class="top-cube type7"></div>
+      <div data-typecube="type8" class="top-cube type8"></div>
+      <div data-typecube="type9" class="top-cube type9"></div>
+      <div data-typecube="type10" class="top-cube type10"></div>
+      <div data-typecube="type11" class="top-cube type11"></div>
+      <div data-typecube="type12" class="top-cube type12"></div>
+      <div data-typecube="type13" class="top-cube type13"></div>
+      <div data-typecube="type14" class="top-cube type14"></div>
+      <div data-typecube="type15" class="top-cube type15"></div>
+      <div data-typecube="type16" class="top-cube type16"></div>
+    </div> -->
+
+    <div class="wrapper">
+      <div class="side"></div>
+      <div class="pole">
+        <div data-typecube="border" class="border-top cube border"></div>
+        <div data-typecube="border" class="border-right cube border"></div>
+        <div data-typecube="border" class="border-left cube border"></div>
+
+        <div data-typecube="destroy" class="block cube"></div>
+
+        <div class="circle">
+          <div class="circle-center"></div>
+        </div>
+
+        <div class="platform"></div>
+      </div>
+      <div class="side">
+        <div class="life-wrapper">
+          <div class="life">
+            <img src="./images/love.png" alt="" class="img-max" />
+          </div>
+          <div class="life">
+            <img src="./images/love.png" alt="" class="img-max" />
+          </div>
+          <div class="life">
+            <img src="./images/love.png" alt="" class="img-max" />
+          </div>
+        </div>
+        <div class="level-wrapper">
+          <div class="level-text">level</div>
+          <div class="level-number">1</div>
+        </div>
+        <div class="score-wrapper">
+          <div class="score-text">score</div>
+          <div class="score-number">0</div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="save">save</div> -->
+    <div class="restart-modal modal-background">
+      <div class="modal">
+        <div class="modal-top-img">
+          <img src="./images/game-over.png" alt="" class="img-max" />
+        </div>
+        <div class="modal-score-wrapper">
+          <div class="modal-score-text">score:</div>
+          <div class="modal-score-number">0</div>
+        </div>
+        <div class="modal-circle-img restart-button">
+          <img src="./images/restart.png" alt="" class="img-max" />
+        </div>
+      </div>
+    </div>
+    <div class="next-modal modal-background">
+      <div class="modal">
+        <div class="modal-top-img">
+          <img src="./images/ball.png" alt="" class="img-max" />
+        </div>
+        <div class="modal-score-wrapper">
+          <div class="modal-score-text">score:</div>
+          <div class="modal-score-number">0</div>
+        </div>
+        <div class="modal-circle-img next-button">
+          <img src="./images/next.png" alt="" class="img-max" />
+        </div>
+      </div>
+    </div>
+    <div class="victory-modal modal-background">
+      <div class="modal">
+        <div class="modal-top-img">
+          <img src="./images/victory.png" alt="" class="img-max" />
+        </div>
+        <div class="modal-score-wrapper">
+          <div class="modal-score-text">score:</div>
+          <div class="modal-score-number">0</div>
+        </div>
+        <div class="modal-circle-img restart-button">
+          <img src="./images/restart.png" alt="" class="img-max" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./level.js"></script>
+    <script src="./index4.js"></script>
+  </body>
+</html>
